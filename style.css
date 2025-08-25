@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #548687;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.gameheading1{
+    transition: all ;
+}
+.gameheading1:hover{
+    scale: 1.1;
+    color: brown;
+}
+.gamebox{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+/* height: 30%;
+max-width:45%; */
+  /* flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center; */
+  gap: 0.6rem;
+  /* border: 1px solid red; */
+}
+.gamebutton{
+    height: 5rem;
+    width: 5rem;
+    border-radius:10px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #b0413e;
+    background-color: #ffffc7;
+    font-size: 2rem;
+    
+}
+.reset{
+   
+    text-align: center;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius:10px ;
+  
+  
+}
+.messagecontainer{
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+    gap: 1rem;
+}
+.winnermessage{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.winnermessage:hover{
+    scale:1.1;
+    color: #b0413e;
+}
+.restartbutton{
+    display: hide;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    background-color: black;
+    border-radius:10px ;
+    width:fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
